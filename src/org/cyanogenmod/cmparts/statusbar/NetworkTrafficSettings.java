@@ -34,6 +34,7 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
 
     private DropDownPreference mNetTrafficMode;
     private CMSecureSettingSwitchPreference mNetTrafficAutohide;
+    private CMSecureSettingSwitchPreference mNetTrafficHideArrow;
     private NetworkTrafficThresholdSeekBarPreference mNetTrafficAutohideThreshold;
 
     @Override
@@ -51,7 +52,10 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
 
         mNetTrafficAutohide = (CMSecureSettingSwitchPreference)
                 findPreference(CMSettings.Secure.NETWORK_TRAFFIC_AUTOHIDE);
-        mNetTrafficAutohide.setOnPreferenceChangeListener(this);
+	mNetTrafficHideArrow = (CMSecureSettingSwitchPreference)
+                findPreference(CMSettings.Secure.NETWORK_TRAFFIC_HIDEARROW);
+	mNetTrafficAutohide.setOnPreferenceChangeListener(this);        
+	mNetTrafficHideArrow.setOnPreferenceChangeListener(this);
 
         mNetTrafficAutohideThreshold = (NetworkTrafficThresholdSeekBarPreference)
                 findPreference(CMSettings.Secure.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD);
@@ -60,7 +64,7 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         mNetTrafficAutohideThreshold.setThreshold(netTrafficAutohideThreshold);
         mNetTrafficAutohideThreshold.setOnPreferenceChangeListener(this);
 
-        updateEnabledStates(null, null);
+        updateEnabledStates(null, 1, null);
     }
 
     @Override
@@ -69,12 +73,15 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
             int intState = Integer.valueOf((String) newValue);
             CMSettings.Secure.putInt(getActivity().getContentResolver(),
                     CMSettings.Secure.NETWORK_TRAFFIC_MODE, intState);
-            updateEnabledStates(intState, null);
+            updateEnabledStates(intState, 1, null);
             return true;
         } else if (preference == mNetTrafficAutohide) {
-            updateEnabledStates(null, (Boolean) newValue);
+            updateEnabledStates(null, 1, (Boolean) newValue);
             return true;
-        } else if (preference == mNetTrafficAutohideThreshold) {
+        } else if (preference == mNetTrafficHideArrow) {
+            updateEnabledStates(null, 2, (Boolean) newValue);
+            return true;
+        }else if (preference == mNetTrafficAutohideThreshold) {
             int threshold = (Integer) newValue;
             CMSettings.Secure.putInt(getActivity().getContentResolver(),
                     CMSettings.Secure.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, threshold);
@@ -83,11 +90,14 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         return false;
     }
 
-    private void updateEnabledStates(Integer mode, Boolean autoHide) {
+    private void updateEnabledStates(Integer mode, int z, Boolean autoHide) {
         boolean disabled = mode == null ? "0".equals(mNetTrafficMode.getValue()) : mode == 0;
         boolean autoHideEnabled = autoHide == null ? mNetTrafficAutohide.isChecked() : autoHide;
 
         mNetTrafficAutohide.setEnabled(!disabled);
+	mNetTrafficHideArrow.setEnabled(!disabled);
+	if(z!=2)
         mNetTrafficAutohideThreshold.setEnabled(!disabled && autoHideEnabled);
     }
+
 }
