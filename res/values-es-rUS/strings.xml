@@ -216,7 +216,7 @@
   <string name="navigation_bar_left_summary">Colocar la barra de navegación a la izquierda de la pantalla en modo horizontal</string>
   <string name="navigation_bar_arrow_keys_title">Mostrar teclas de flechas al escribir</string>
   <string name="navigation_bar_arrow_keys_summary">Mostrar el botón izquierdo y derecho del cursor al escribir. Reemplaza al selector IME.</string>
-  <string name="navigation_bar_home_long_press_title">Acción de pulsación larga de inicio</string>
+  <string name="navigation_bar_home_long_press_title">Acción de pulsación larga en Inicio</string>
   <string name="navigation_bar_home_double_tap_title">Acción de doble pulsación en Inicio</string>
   <string name="navigation_bar_recents_title">Acción de pulsación larga en recientes</string>
   <!-- Power menu -->
@@ -295,8 +295,8 @@
   <string name="new_profile_name">&lt;nuevo perfil&gt;</string>
   <!-- Rename Dialog  -->
   <string name="rename_dialog_title">Renombrar</string>
-  <string name="rename_dialog_message">Introducir un nuevo nombre</string>
-  <string name="rename_dialog_hint">Introducir el nombre del perfil</string>
+  <string name="rename_dialog_message">Ingresa un nuevo nombre</string>
+  <string name="rename_dialog_hint">Ingresa el nombre del perfil</string>
   <!-- Reset Profiles -->
   <string name="profile_reset_title">Restablecer</string>
   <string name="profile_reset_message">¿Borrar todos los perfiles y grupos de aplicaciones creados por el usuario y restaurarlos a los valores predefinidos?</string>
@@ -338,7 +338,7 @@
   <string name="profile_applist_title">Aplicaciones</string>
   <string name="profile_new_appgroup">Nuevo grupo de aplicaciones</string>
   <string name="profile_delete_appgroup">¿Borrar este grupo de aplicaciones?</string>
-  <string name="profile_appgroup_name_prompt">Introducir un nombre para el nuevo grupo de aplicaciones</string>
+  <string name="profile_appgroup_name_prompt">Ingresa un nombre para el nuevo grupo de aplicaciones</string>
   <string name="profile_appgroup_name_title">Nombre</string>
   <string name="duplicate_appgroup_name">¡Nombre de grupo de aplicación duplicado!</string>
   <!-- Add application dialog box title -->
@@ -383,8 +383,6 @@
   <string name="status_bar_quick_qs_pulldown_off">Desactivado</string>
   <string name="status_bar_quick_qs_pulldown_left">Izquierdo</string>
   <string name="status_bar_quick_qs_pulldown_right">Derecho</string>
-  <string name="status_bar_toggle_brightness">Ajuste de brillo</string>
-  <string name="status_bar_toggle_brightness_summary">Ajustar el brillo deslizando a través de la barra de estado</string>
   <string name="status_bar_double_tap_to_sleep_title">Doble pulsación para suspender</string>
   <string name="status_bar_double_tap_to_sleep_summary">Pulsa dos veces la barra de estado para apagar la pantalla</string>
   <!-- Status bar - icons -->
@@ -417,6 +415,14 @@
   <string name="status_bar_battery_percentage_default">Oculto</string>
   <string name="status_bar_battery_percentage_text_inside">Dentro del icono</string>
   <string name="status_bar_battery_percentage_text_next">Junto al icono</string>
+  <!-- Status bar - Brightness -->
+  <string name="status_bar_brightness_category">Brillo</string>
+  <string name="status_bar_brightness_slider_title">Deslizador del brillo</string>
+  <string name="status_bar_brightness_slider_summary">Ajusta el brillo desde los ajustes rápidos</string>
+  <string name="status_bar_brightness_slider_auto_title">Brillo automático</string>
+  <string name="status_bar_brightness_slider_auto_summary">Mostrar interruptor cerca del deslizador, para el brillo automático</string>
+  <string name="status_bar_toggle_brightness">Ajuste de brillo</string>
+  <string name="status_bar_toggle_brightness_summary">Ajustar el brillo deslizando a través de la barra de estado</string>
   <!-- Status bar - icon blacklist -->
   <string name="status_bar_icons_title">Iconos de la barra de estado</string>
   <string name="status_bar_icons_summary">Controlar qué iconos aparecen en la barra de estado</string>
