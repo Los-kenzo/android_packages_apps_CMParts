@@ -59,7 +59,7 @@
   <string name="privacy_guard_notification_title">顯示通知</string>
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">編輯指示燈設定</string>
-  <string name="pulse_speed_title">呼吸燈長度與速度</string>
+  <string name="pulse_speed_title">閃爍呼吸燈長度與速度</string>
   <string name="default_time">正常</string>
   <string name="custom_time">自訂</string>
   <string name="dialog_delete_title">刪除</string>
@@ -79,7 +79,7 @@
   <string name="pulse_speed_very_slow">非常低</string>
   <!-- Battery light settings -->
   <string name="battery_light_title">電量指示燈</string>
-  <string name="battery_low_pulse_title">電量不足時開啟呼吸燈</string>
+  <string name="battery_low_pulse_title">低電量時閃爍呼吸燈</string>
   <string name="battery_light_list_title">顏色</string>
   <string name="battery_light_low_color_title">電量不足</string>
   <string name="battery_light_medium_color_title">充電中</string>
@@ -239,6 +239,11 @@
   <string name="torch_long_press_power_gesture_title">長按開啟手電筒</string>
   <string name="torch_long_press_power_gesture_desc">當螢幕關閉時長按電源鍵啟動手電筒</string>
   <string name="torch_long_press_power_timeout_title">自動關閉手電筒</string>
+  <string name="torch_long_press_power_timeout_never">永不</string>
+  <string name="torch_long_press_power_timeout_1min">1 分鐘</string>
+  <string name="torch_long_press_power_timeout_2min">2 分鐘</string>
+  <string name="torch_long_press_power_timeout_5min">5 分鐘</string>
+  <string name="torch_long_press_power_timeout_10min">10 分鐘</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">刪除</string>
   <string name="profile_action_none">保持不變</string>

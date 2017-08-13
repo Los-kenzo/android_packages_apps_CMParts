@@ -229,7 +229,7 @@
   <string name="power_menu_lockdown_title">Gailuaren blokeoa</string>
   <string name="power_menu_bug_report_title">Errore-txostena</string>
   <string name="power_menu_sound_title">Soinu-panela</string>
-  <string name="power_menu_bug_report_disabled">Erroreen berri ematea ezgaituta dago garapen ezarpenetan</string>
+  <string name="power_menu_bug_report_disabled">Erroreen berri ematea ezgaituta dago garatzaileen aukeretan</string>
   <string name="volume_keys_control_ring_stream_title">Kontrolatu dei-doinuaren bolumena</string>
   <string name="volume_keys_control_ring_stream_summary_on">Bolumen teklek dei-doinuaren bolumena kontrolatzen dute</string>
   <string name="volume_keys_control_ring_stream_summary_off">Bolumen teklek multimediaren bolumena kontrolatzen dute</string>
@@ -239,6 +239,11 @@
   <string name="torch_long_press_power_gesture_title">Sakatu luze linternarako</string>
   <string name="torch_long_press_power_gesture_desc">Aktibatu linterna itzaltze botoia luze sakatuz pantaila itzalita dagoenean</string>
   <string name="torch_long_press_power_timeout_title">Itzali linterna automatikoki</string>
+  <string name="torch_long_press_power_timeout_never">Inoiz ez</string>
+  <string name="torch_long_press_power_timeout_1min">minutu 1</string>
+  <string name="torch_long_press_power_timeout_2min">2 minutu</string>
+  <string name="torch_long_press_power_timeout_5min">5 minutu</string>
+  <string name="torch_long_press_power_timeout_10min">10 minutu</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Ezabatu</string>
   <string name="profile_action_none">Laga aldatu gabe</string>
